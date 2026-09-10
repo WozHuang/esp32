@@ -6,8 +6,13 @@
 #include <Adafruit_ILI9341.h>
 
 // ---------- User configuration ----------
+#ifdef WOKWI
+const char* WIFI_SSID = "Wokwi-GUEST";
+const char* WIFI_PASSWORD = "";
+#else
 const char* WIFI_SSID = "huang602";
 const char* WIFI_PASSWORD = "huang81879628";
+#endif
 
 // ---------- TFT wiring ----------
 constexpr int8_t TFT_CS = 1;

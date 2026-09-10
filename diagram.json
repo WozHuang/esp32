@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-ili9341",
+      "id": "tft",
+      "top": -78,
+      "left": 322,
+      "rotate": 90,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:3V3", "tft:VCC", "red", [ "h20" ] ],
+    [ "esp:GND.1", "tft:GND", "black", [ "h30" ] ],
+    [ "esp:1", "tft:CS", "green", [ "h50" ] ],
+    [ "esp:42", "tft:D/C", "blue", [ "h70" ] ],
+    [ "esp:41", "tft:MOSI", "purple", [ "h80" ] ],
+    [ "esp:40", "tft:SCK", "yellow", [ "h90" ] ]
+  ],
+  "dependencies": {}
+}
