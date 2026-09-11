@@ -11,12 +11,12 @@
 #include "weather.h"
 
 // ---------- TFT wiring ----------
-constexpr int8_t TFT_CS = 1;
-constexpr int8_t TFT_RST = 2;
-constexpr int8_t TFT_DC = 42;
-constexpr int8_t TFT_MOSI = 41;
-constexpr int8_t TFT_SCLK = 40;
-constexpr int8_t TFT_MISO = -1;
+constexpr int8_t TFT_CS = 9;
+constexpr int8_t TFT_RST = 3;
+constexpr int8_t TFT_DC = 8;
+constexpr int8_t TFT_MOSI = 18;
+constexpr int8_t TFT_SCLK = 17;
+constexpr int8_t TFT_MISO = 16;
 
 constexpr long GMT_OFFSET_SECONDS = 8 * 60 * 60;
 constexpr int DAYLIGHT_OFFSET_SECONDS = 0;
